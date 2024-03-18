@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr=['a','b','d','d','c','d','d'];
+    var index=arr.indexOf('d');
+    var count=0;
+    while(index!=-1){
+        console.log("d元素出现的索引下标："+index);
+        count++;
+        index=arr.indexOf('d',index+1);
+    }
+    console.log("d元素出现的次数："+count);
+</script>
+</body>
+</html>

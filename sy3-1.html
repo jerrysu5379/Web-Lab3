@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr=[80,90,85,70,60];
+    var sum=0;
+    var max=0;
+    var min=100;
+    for(var i=0;i<arr.length;i++){
+        sum+=arr[i];
+        if(arr[i]>max){
+            max=arr[i];
+        }
+        if(arr[i]<min){
+            min=arr[i];
+        }
+    }
+    console.log("5门课程的成绩："+arr);
+    console.log("最高分："+max);
+    console.log("最低分："+min);
+    console.log("总分："+sum);
+    console.log("平均分："+sum/arr.length);
+</script>
+</body>
+</html>

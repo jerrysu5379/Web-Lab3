@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input id="button1" type="button"  value="事件按钮"/>
+	</body>
+	<script>
+		var oButton1=document.getElementById("button1");
+		oButton1.onclick=function(){
+			console.log("5单击了此按钮");
+		}
+		oButton1.onmouseover=function(){
+			console.log("1鼠标悬浮在此按钮");
+		}
+		oButton1.onmouseout=function(){
+			console.log("6鼠标离开了在此按钮");
+		}
+		oButton1.onmouseenter=function(){
+			console.log("2鼠标进入了在此按钮");
+		}
+		oButton1.onmousedown=function(){
+			console.log("3鼠标按下了");
+		}
+		oButton1.onmouseup=function(){
+			console.log("4鼠标松开了");
+		}
+		// oButton1.onmousemove=function(){
+		// 	console.log("7鼠标移动了");
+		// }
+	</script>
+</html>
